@@ -1,0 +1,50 @@
+{
+  "category": "Développement Professionnel",
+  "questions": [
+    {
+      "theme": "Communication",
+      "content": "Quel est l'aspect le plus important d'une communication efficace ?",
+      "answers": [
+        "Écouter activement",
+        "Parler clairement",
+        "Répondre rapidement"
+      ]
+    },
+    {
+      "theme": "Travail d'équipe",
+      "content": "Quel est le principal avantage du travail d'équipe ?",
+      "answers": [
+        "Synergie",
+        "Compétition",
+        "Indépendance"
+      ]
+    },
+    {
+      "theme": "Leadership",
+      "content": "Quelle qualité est la plus importante pour un leader ?",
+      "answers": [
+        "Empathie",
+        "Détermination",
+        "Expertise technique"
+      ]
+    },
+    {
+      "theme": "Éthique professionnelle",
+      "content": "Quel comportement est considéré comme le plus non éthique en milieu professionnel ?",
+      "answers": [
+        "Utilisation des ressources de l'entreprise à des fins personnelles",
+        "Prendre des pauses régulières",
+        "Collaborer avec des collègues sur des projets"
+      ]
+    },
+    {
+      "theme": "Gestion du temps",
+      "content": "Quelle méthode est la plus efficace pour gérer son temps ?",
+      "answers": [
+        "La méthode Pomodoro",
+        "Listes de tâches",
+        "Multitâche"
+      ]
+    }
+  ]
+}
