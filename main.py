@@ -22,10 +22,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MONGODB_URI = "mongodb+srv://nadjide:VgSlIjkXOxF1sXia@prod-cluster.cnbxwti.mongodb.net/?retryWrites=true&w=majority&appName=prod-cluster"
+MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://nadjide:VgSlIjkXOxF1sXia@prod-cluster.cnbxwti.mongodb.net/?retryWrites=true&w=majority&tls=true&tlsAllowInvalidCertificates=true")
 
 async def connect_to_mongo():
-    app.mongodb_client = AsyncIOMotorClient(MONGODB_URI, server_api=ServerApi('1'))
+    app.mongodb_client = AsyncIOMotorClient(MONGODB_URI)
     app.mongodb = app.mongodb_client.SmartHire
 
 def disconnect_from_mongo():
