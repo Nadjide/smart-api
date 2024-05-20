@@ -38,9 +38,13 @@ app.add_event_handler("shutdown", disconnect_from_mongo)
 def verify_password(plain_password, hashed_password):
     return bcrypt.checkpw(plain_password.encode('utf-8'), hashed_password)
 
+@app.get('/')
+def read_root():
+    return {"message": "Bienvenue sur notre site"}
+
 @app.get('/api')
 def principal():
-    return {"message": "Bienvenue sur notre site"}
+    return {"message": "Bienvenue sur notre api"}
 
 def document_to_dict(document):
     return {**document, "_id": str(document["_id"])}
